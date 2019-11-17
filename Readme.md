@@ -19,5 +19,11 @@ Even though [RDF Semantics](https://www.w3.org/TR/rdf11-mt/) also has an interpr
  
  One would need more advanced categories of RDF Graphs that take into account `owl:sameAs` relations. If one takes an agent's beliefs as consisting of a set of such graphs, then one can see another way to construe that Rezza does not believe that { Hesperus = Phosphorus}, namely by checking if in the union of the graphs he believes to be true, that triple appears. That makes the reasoning inferentiable and computable. The semantic map to the world, can then be moved over to pragmatics, namely how to use such graphs.
  
+ Still the article's use of monads to explain perspectives may perhaps be applicable in this category too.
+ 
+ ## Todo
+ 
+ Is RDFHom a Topos? Are the other RDF Categories that build in OWL reasoning ones too? What would a modal logic for those be then?
+ 
  
  

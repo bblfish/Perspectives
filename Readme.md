@@ -23,7 +23,9 @@ Even though [RDF Semantics](https://www.w3.org/TR/rdf11-mt/) also has an interpr
  
  ## Todo
  
- Is RDFHom a Topos? Are the other RDF Categories that build in OWL reasoning ones too? What would a modal logic for those be then?
+ Is RDFHom a Topos? Are the other RDF Categories that build in OWL reasoning ones too? What would a modal logic for those be then? 
+ 
+ If so it looks like one should be able to form a slice topos RdfHom/Person somehow and get some modal logic out of it following David Corfield's introduction in his chapter 4 of [Modal HoTT](http://philsci-archive.pitt.edu/15260/) book which I describe in [Modal HoTT on the Web](https://medium.com/@bblfish/modal-hott-on-the-web-2f4f7996b41f).
  
  
  

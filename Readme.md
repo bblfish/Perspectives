@@ -1,7 +1,8 @@
-# Background
+# Perspectives
 
-A little playground to help me understand the article
+This started off as a playground to help me understand the article
 [Perspectives](https://semprag.org/article/view/sp.9.21) by Ash Asudeh and Gianluca Giorgolo that appeared in Semantics and Pragmatics in 2016. A shorter and perhaps more readable version appeared in 2014 as [Monads as a solution for generalized opacity](https://www.aclweb.org/anthology/W14-1403/).
+
 They consider famous problems in the philosophy of language such as how to represent sentences such as Laura Lane does not believe that Superman is Clark Kent, where both Superman and Clark Kent refer to the same entitity (in the fictional world of the comic strips). They use the Reader Monad to solve this problem of belief contexts.
 
 The code is in Scala which does not have linear types, but those are probably only useful for the linguistic side of things.

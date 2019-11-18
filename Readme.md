@@ -2,6 +2,7 @@
 
 A little playground to help me understand the article
 [Perspectives](https://semprag.org/article/view/sp.9.21) by Ash Asudeh and Gianluca Giorgolo that appeared in Semantics and Pragmatics in 2016. A shorter and perhaps more readable version appeared in 2014 as [Monads as a solution for generalized opacity](https://www.aclweb.org/anthology/W14-1403/).
+They consider famous problems in the philosophy of language such as how to represent sentences such as Laura Lane does not believe that Superman is Clark Kent, where both Superman and Clark Kent refer to the same entitity (in the fictional world of the comic strips). They use the Reader Monad to solve this problem of belief contexts.
 
 The code is in Scala which does not have linear types, but those are probably only useful for the linguistic side of things.
 
@@ -9,9 +10,9 @@ The [Point of View (PoV)](src/main/scala/PoV.scala) code shows a simplified view
 
 ## Application to RDF
 
-Even though [RDF Semantics](https://www.w3.org/TR/rdf11-mt/) also has an interpretation function that maps URIs to resources, developing RDF with mutliple interpretation functions does not seem like quite the right way to go.
+Even though [RDF Semantics](https://www.w3.org/TR/rdf11-mt/) also has an interpretation function that maps URIs to resources, developing RDF with mutliple interpretation functions does not seem like quite the right way to go, or should at least not be the first way to look at adapting these ideas.
 
-A multiplicity of interpretation functions would break the idea of RDF as a global language. This would overly emphasise a form of subjectivism, leading to a humpty dumpty world where anyone can mean anything by any word. The authors do adderss this issue, and perhaps the following proposal can be made compatible with it.  Before reworking the interpretation function of RDF, it may be better to explore the following inferential thinking.
+A multiplicity of interpretation functions would be problematic for RDF understood as a global machine readable logic. It would enhance a tempting form of subjectivism, risking one to end up with a humpty dumpty world where anyone can mean anything by any word. The authors do address this issue in the later paper and perhaps the following proposal can be made compatible with it.  Before reworking the interpretation function of RDF, it may be better to explore the following inferential thinking.
  
 Here I take philosophical inspiration from [Robert Brandom](https://www.pitt.edu/~rbrandom/)s' inferential semantics, though in a way it is a natural thing to do if one things computationally about building apps to read data on the web. We can first see that RDF graphs imply other graphs and form (at it's simplest) a category RDFHom as shown in Benjamin Braatz's thesis [Formal Modelling and Applicationof Graph Transformations in theResource Description Framework](https://pdfs.semanticscholar.org/b8c8/5a3e7a04020259ec9a58c7e5563033f52844.pdf). I attempt to illustrate this category in the diagram below (which I drew up 2 years ago)
  
@@ -47,7 +48,7 @@ The following papers also look at the problem of context in RDF:
  * 2007, Pat Hayes' [Context Mereology](https://www.semanticscholar.org/paper/Context-Mereology-Hayes/937432fa25fb963f50006ea296a8a6e3c628d132)
  * 2010, Bao, Jie, Tao, Jiao, McGuinness, Deborah L. and Smart, Paul [Context Representation for the Semantic Web](https://eprints.soton.ac.uk/270829/) 
  
- My [2nd year report](http://co-operating.systems/2019/04/01/PhD_second_year_report.pdf) tentatively explores some of these issues and the use of monads for security reasoning.
+ My [2nd year report](http://co-operating.systems/2019/04/01/PhD_second_year_report.pdf) tentatively explores some of these issues and the use of monads for security reasoning following in the steps of Abadi. Abadi also worked on information flow with indexed monads. This has been very recently given a very interesting description using modal HoTT in [Modalities, Cohesion, and Information Flow"](arxiv.org/abs/1809.07897) by G.A.Kavvos. 
                                
  
  

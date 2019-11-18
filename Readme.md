@@ -33,6 +33,14 @@ The article's use of monads to explain perspectives is very interesting, and so 
  
  Also I need to re-read [”Knowledge Representation
  in Bicategories of Relations](https://arxiv.org/pdf/1706.00526.pdf)” by Evan Patterson at Stanford, where he shows how a form of typed OWL can be understood category theoretically.
+ 
+ What is needed is a way to find a semantics for Quads as specified in [RDF1.1 Named Graphs](https://www.w3.org/TR/rdf11-concepts/#dfn-named-graph) but which appeared long before in [SPARQL](https://www.w3.org/TR/sparql11-overview/) and in [Tim Berners-Lee's N3 notation and cwm reasoner](https://www.w3.org/2000/10/swap/doc/Processing). These allow one to write things like
+ 
+ ```N3
+ LauraLane believes { Superman ≠ ClarkKent } .
+```                                
+
+which is exactly the type of thing one cannot write in an RDF 1.0 graph (unless one places the object inside an RDF/XML literal! and that is how it is implicit in RDF1.0) and which is the topic of the Perspectives papers, which use monads to explain the problem. 
                                
  
  

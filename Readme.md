@@ -41,6 +41,13 @@ The article's use of monads to explain perspectives is very interesting, and so 
 ```                                
 
 which is exactly the type of thing one cannot write in an RDF 1.0 graph (unless one places the object inside an RDF/XML literal! and that is how it is implicit in RDF1.0) and which is the topic of the Perspectives papers, which use monads to explain the problem. 
+
+The following papers also look at the problem of context in RDF:
+ * 2007 Tim Berners-Lee, Dan Connolly, Lalana Kagal, Yosi Scharf, Jim Hendler [N3Logic: A Logical Framework For the World Wide Web](https://arxiv.org/abs/0711.1533)
+ * 2007, Pat Hayes' [Context Mereology](https://www.semanticscholar.org/paper/Context-Mereology-Hayes/937432fa25fb963f50006ea296a8a6e3c628d132)
+ * 2010, Bao, Jie, Tao, Jiao, McGuinness, Deborah L. and Smart, Paul [Context Representation for the Semantic Web](https://eprints.soton.ac.uk/270829/) 
+ 
+ My [2nd year report](http://co-operating.systems/2019/04/01/PhD_second_year_report.pdf) tentatively explores some of these issues and the use of monads for security reasoning.
                                
  
  

@@ -3,9 +3,9 @@
 This started off as a playground to help me understand the article
 [Perspectives](https://semprag.org/article/view/sp.9.21) by Ash Asudeh and Gianluca Giorgolo that appeared in Semantics and Pragmatics in 2016. A shorter and perhaps more readable version appeared in 2014 as [Monads as a solution for generalized opacity](https://www.aclweb.org/anthology/W14-1403/).
 
-They consider famous problems in the philosophy of language such as how to represent sentences such as Laura Lane does not believe that Superman is Clark Kent, where both Superman and Clark Kent refer to the same entitity (in the fictional world of the comic strips). They use the Reader Monad to solve this problem of belief contexts.
+They consider famous problems in the philosophy of language such as how to represent sentences such as Laura Lane does not believe that Superman is Clark Kent, where both Superman and Clark Kent refer to the same entitity (in the fictional world of the comic strips). They use the Reader Monad to solve this problem of belief contexts. I found this article by reading David Corfield's [Modal HoTT chapter 4](http://philsci-archive.pitt.edu/15260/) (also see slides [How we use monads without ever realising it](https://ncatlab.org/davidcorfield/files/monad.pdf)).
 
-The code is in Scala which does not have linear types, but those are probably only useful for the linguistic side of things.
+The code is in Scala which does not have linear types, but those are probably mostly useful for the linguistic side of things.
 
 The [Point of View (PoV)](src/main/scala/PoV.scala) code shows a simplified view of their proposal, with a simple PoV Reader Monad. In the [Test Scala Worsheet](src/main/scala/Test.sc) I show how one can get the results that they get in their document.
 
